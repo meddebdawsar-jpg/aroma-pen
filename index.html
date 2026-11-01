@@ -61,14 +61,44 @@
     </div>
   </section>
 
-  <!-- Section Comparaison & Ingrédients -->
+  <!-- Section Présentation des 5 Saveurs & Packs -->
   <section class="border-t border-slate-800/80 bg-slate-950/50 py-16">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-2xl md:text-4xl font-bold mb-4">Une Alternative Plus Saine</h2>
-        <p class="text-slate-400 text-sm md:text-base">Comparez l'expérience SEFUDUN aux méthodes traditionnelles</p>
+        <h2 class="text-2xl md:text-4xl font-bold mb-4">Découvrez nos 5 Saveurs Uniques</h2>
+        <p class="text-slate-400 text-sm md:text-base">Des formulations botaniques adaptées à chaque moment de votre journée</p>
       </div>
 
+      <!-- Grille des 5 Saveurs -->
+      <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center">
+          <div class="text-3xl mb-3">🌿</div>
+          <h3 class="font-bold text-sm text-white mb-2">Menthe Fraîche</h3>
+          <p class="text-[11px] text-slate-400 leading-relaxed">Fraîcheur intense et dégagement respiratoire.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center">
+          <div class="text-3xl mb-3">🌸</div>
+          <h3 class="font-bold text-sm text-white mb-2">Lavande & Camomille</h3>
+          <p class="text-[11px] text-slate-400 leading-relaxed">Détente profonde, anti-stress et sommeil.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center">
+          <div class="text-3xl mb-3">🍊</div>
+          <h3 class="font-bold text-sm text-white mb-2">Agrumes & Eucalyptus</h3>
+          <p class="text-[11px] text-slate-400 leading-relaxed">Énergie, vitalité et clarté mentale.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center">
+          <div class="text-3xl mb-3">🫐</div>
+          <h3 class="font-bold text-sm text-white mb-2">Myrtille Glacée</h3>
+          <p class="text-[11px] text-slate-400 leading-relaxed">Saveur fruitée douce et touche de fraîcheur.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center">
+          <div class="text-3xl mb-3">🍏</div>
+          <h3 class="font-bold text-sm text-white mb-2">Pomme Verte</h3>
+          <p class="text-[11px] text-slate-400 leading-relaxed">Peps fruité et sensation revigorante.</p>
+        </div>
+      </div>
+
+      <!-- Images Comparatives -->
       <div class="grid md:grid-cols-2 gap-8 items-center">
         <div class="rounded-2xl border border-slate-800 overflow-hidden bg-slate-900 p-2">
           <img src="clean-alternative-comparison.jpg" alt="Clean Alternative Comparison" class="w-full h-auto rounded-xl">
@@ -80,7 +110,7 @@
     </div>
   </section>
 
-  <!-- Formulaire de commande Formspree -->
+  <!-- Formulaire de commande Formspree avec les 5 Saveurs -->
   <section id="commander" class="max-w-xl mx-auto px-4 py-16">
     <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl">
       <div class="text-center mb-6">
@@ -88,9 +118,33 @@
         <p class="text-xs text-slate-400">Paiement à la livraison dans toute la Tunisie (24 Gouvernorats)</p>
       </div>
 
-      <!-- Formspree Endpoint Configured -->
-      <form action="https://formspree.io/f/moeekpbl" method="POST" class="space-y-4">
+      <form action="https://formspree.io/f/moeekpbl" method="POST" class="space-y-5">
         
+        <!-- Sélection des Packs & Prix -->
+        <div>
+          <label class="block text-xs font-bold text-emerald-400 mb-2 uppercase tracking-wider">Choix de l'offre / اختر العرض</label>
+          <select name="pack" required class="w-full bg-slate-950 border border-emerald-500/50 rounded-lg px-3 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 font-semibold">
+            <option value="Pack 1 - 39 TND">1x Inhalateur - 39 TND (+7 TND Livraison)</option>
+            <option value="Pack 2 - 69 TND (Livraison Gratuite)" selected>2x Inhalateurs - 69 TND (Livraison GRATUITE)</option>
+            <option value="Pack 3 - 89 TND (Offre Spéciale)">3x Inhalateurs - 89 TND (Livraison GRATUITE)</option>
+          </select>
+        </div>
+
+        <!-- Choix des 5 Saveurs -->
+        <div>
+          <label class="block text-xs text-slate-400 mb-1">Choisissez votre saveur / النكهة المفضلة</label>
+          <select name="flavor" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500">
+            <option value="Menthe Fraîche">🌿 Menthe Fraîche / Mint</option>
+            <option value="Lavande & Camomille">🌸 Lavande & Camomille / Sleep</option>
+            <option value="Agrumes & Eucalyptus">🍊 Agrumes & Eucalyptus / Energy</option>
+            <option value="Myrtille Glacée">🫐 Myrtille Glacée / Ice Blueberry</option>
+            <option value="Pomme Verte">🍏 Pomme Verte / Green Apple</option>
+            <option value="Pack Mixte (Assortiment)">🎁 Pack Mixte (Assortiment varié)</option>
+          </select>
+        </div>
+
+        <hr class="border-slate-800 my-4" />
+
         <!-- Nom -->
         <div>
           <label class="block text-xs text-slate-400 mb-1">Nom et Prénom / الاسم واللقب</label>
@@ -141,8 +195,8 @@
           <textarea name="address" rows="2" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500" placeholder="Rue, Cité, Code postal..."></textarea>
         </div>
 
-        <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3.5 rounded-xl shadow-lg transition">
-          Commander Maintenant / اطلب الآن (Paiement à la livraison)
+        <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3.5 rounded-xl shadow-lg transition text-base">
+          Confirmer la commande / تأكيد الطلب (COD)
         </button>
       </form>
     </div>
