@@ -110,7 +110,7 @@
     </div>
   </section>
 
-  <!-- Formulaire de commande Formspree avec les 5 Saveurs -->
+  <!-- Formulaire de commande Formspree avec Packs (1 à 5) -->
   <section id="commander" class="max-w-xl mx-auto px-4 py-16">
     <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl">
       <div class="text-center mb-6">
@@ -120,26 +120,28 @@
 
       <form action="https://formspree.io/f/moeekpbl" method="POST" class="space-y-5">
         
-        <!-- Sélection des Packs & Prix -->
+        <!-- Sélection des Packs de 1 à 5 -->
         <div>
           <label class="block text-xs font-bold text-emerald-400 mb-2 uppercase tracking-wider">Choix de l'offre / اختر العرض</label>
           <select name="pack" required class="w-full bg-slate-950 border border-emerald-500/50 rounded-lg px-3 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 font-semibold">
             <option value="Pack 1 - 39 TND">1x Inhalateur - 39 TND (+7 TND Livraison)</option>
             <option value="Pack 2 - 69 TND (Livraison Gratuite)" selected>2x Inhalateurs - 69 TND (Livraison GRATUITE)</option>
-            <option value="Pack 3 - 89 TND (Offre Spéciale)">3x Inhalateurs - 89 TND (Livraison GRATUITE)</option>
+            <option value="Pack 3 - 89 TND (Livraison Gratuite)">3x Inhalateurs - 89 TND (Livraison GRATUITE)</option>
+            <option value="Pack 4 - 109 TND (Offre Spéciale)">4x Inhalateurs - 109 TND (Livraison GRATUITE)</option>
+            <option value="Pack 5 - 129 TND (Coffret Complet 5 Saveurs)">5x Inhalateurs (Toutes les Saveurs) - 129 TND (Livraison GRATUITE)</option>
           </select>
         </div>
 
         <!-- Choix des 5 Saveurs -->
         <div>
-          <label class="block text-xs text-slate-400 mb-1">Choisissez votre saveur / النكهة المفضلة</label>
+          <label class="block text-xs text-slate-400 mb-1">Choix de la saveur principale / النكهة</label>
           <select name="flavor" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500">
+            <option value="Pack Mixte (Toutes les saveurs)">🎁 Pack Mixte (Assortiment recommandé)</option>
             <option value="Menthe Fraîche">🌿 Menthe Fraîche / Mint</option>
             <option value="Lavande & Camomille">🌸 Lavande & Camomille / Sleep</option>
             <option value="Agrumes & Eucalyptus">🍊 Agrumes & Eucalyptus / Energy</option>
             <option value="Myrtille Glacée">🫐 Myrtille Glacée / Ice Blueberry</option>
             <option value="Pomme Verte">🍏 Pomme Verte / Green Apple</option>
-            <option value="Pack Mixte (Assortiment)">🎁 Pack Mixte (Assortiment varié)</option>
           </select>
         </div>
 
