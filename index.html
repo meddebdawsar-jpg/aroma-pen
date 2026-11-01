@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AROMA PEN - Bâtonnet Diffuseur d'Aromathérapie Naturel</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Cairo for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            900: '#064e3b',
+                            accent: '#34d399'
+                        },
+                        dark: {
+                            900: '#0B0F17',
+                            800: '#111827',
+                            700: '#1F2937',
+                            600: '#374151'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Cairo', 'sans-serif'],
+                        arabic: ['Cairo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .arabic-text {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+        }
+        .glow-effect {
+            box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-dark-700/50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-500 flex items-center justify-center text-dark-900 font-black text-lg">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <span class="font-bold text-xl tracking-wider text-white">AROMA<span class="text-brand-500">PEN</span></span>
+            </a>
+
+            <div class="flex items-center space-x-4">
+                <a href="#offers" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-brand-500 bg-brand-500/10 border border-brand-500/30 rounded-full hover:bg-brand-500/20 transition-all">
+                    Offres / العروض
+                </a>
+                <a href="#order-form" 
+                   class="inline-flex items-center justify-center px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm rounded-full transition-all shadow-lg shadow-emerald-500/20 space-x-2">
+                    <i class="fa-solid fa-cart-shopping text-sm"></i>
+                    <span>Commander Direct</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left: Headline & Copy -->
+                <div class="space-y-6 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span>100% Ingrédients Naturels • طبيعي 100%</span>
+                    </div>
+
+                    <!-- French Title -->
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        Respirez le calme.<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-300">Boostez votre énergie.</span>
+                    </h1>
+
+                    <!-- Arabic Title -->
+                    <h2 class="text-2xl sm:text-3xl font-bold text-emerald-400 arabic-text leading-snug">
+                        تنفس الهدوء واسترجع طاقتك الطبيعية
+                    </h2>
+
+                    <!-- French Subtitle -->
+                    <p class="text-slate-300 text-base sm:text-lg max-w-xl">
+                        Le bâtonnet d'aromathérapie portable par inhalation. Une solution saine sans combustion pour apaiser le stress et remplacer le geste au quotidien.
+                    </p>
+
+                    <!-- Arabic Subtitle -->
+                    <p class="text-slate-400 text-sm sm:text-base arabic-text max-w-xl">
+                        مستنشق الزيوت العطرية المحمول. خيار صحي خالي من التدخين لمقاومة التوتر والتعويض السلوكي اليومي.
+                    </p>
+
+                    <!-- Badges -->
+                    <div class="flex flex-wrap gap-3 justify-center md:justify-start pt-2">
+                        <span class="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg bg-dark-800 border border-dark-700 text-slate-300">
+                            <i class="fa-solid fa-ban text-emerald-500"></i> Sans Nicotine
+                        </span>
+                        <span class="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg bg-dark-800 border border-dark-700 text-slate-300">
+                            <i class="fa-solid fa-leaf text-emerald-500"></i> 100% Herbal
+                        </span>
+                        <span class="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg bg-dark-800 border border-dark-700 text-slate-300">
+                            <i class="fa-solid fa-truck-fast text-emerald-500"></i> Paiement à la livraison
+                        </span>
+                    </div>
+
+                    <!-- CTA Group -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#order-form" 
+                           class="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg rounded-2xl transition-all shadow-xl shadow-emerald-500/25 flex items-center justify-center space-x-3 group">
+                            <i class="fa-solid fa-truck-ramp-box text-2xl group-hover:scale-110 transition-transform"></i>
+                            <div class="text-left">
+                                <div class="text-xs font-normal text-emerald-100">Payer à la livraison / الدفع عند الاستلام</div>
+                                <div class="text-base font-bold leading-none">Commander Maintenant</div>
+                            </div>
+                        </a>
+                        <a href="#formulas" class="px-6 py-4 bg-dark-800 hover:bg-dark-700 border border-dark-700 text-slate-200 font-semibold text-base rounded-2xl transition-all flex items-center justify-center">
+                            Découvrir les formules
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Product Card / Visual Gallery -->
+                <div class="relative flex flex-col justify-center items-center">
+                    <div class="w-full max-w-md bg-gradient-to-b from-dark-800 to-dark-900 border border-dark-700 p-6 rounded-3xl glow-effect text-center space-y-6">
+                        
+                        <!-- MAIN PRODUCT IMAGE / CONTAINER -->
+                        <div class="relative overflow-hidden rounded-2xl bg-dark-900/80 border border-dark-700/50 flex flex-col items-center justify-center">
+                            <img id="main-product-img" 
+                                 src="images/sefudun-flavors-all.jpg" 
+                                 alt="SEFUDUN Aromatherapy Inhaler Pen 5 Variants" 
+                                 class="w-full h-80 object-cover rounded-xl transition-all duration-300 hover:scale-105"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x600/111827/10b981?text=SEFUDUN+5+Aroma+Variants';">
+                            <div class="absolute top-4 right-4 bg-brand-500 text-dark-900 text-xs font-extrabold px-3 py-1 rounded-full uppercase shadow-md">
+                                5 Saveurs Disponibles
+                            </div>
+                        </div>
+
+                        <!-- Image Selector Thumbnails -->
+                        <div class="space-y-3">
+                            <div class="grid grid-cols-3 gap-2">
+                                <!-- Thumbnail 1: All Flavors -->
+                                <button onclick="changeProductImage(this.dataset.src, this)" 
+                                        data-src="images/sefudun-flavors-all.jpg"
+                                        class="w-full h-20 rounded-xl overflow-hidden border-2 border-brand-500 transition-all focus:outline-none bg-dark-800 p-1">
+                                    <img src="images/sefudun-flavors-all.jpg" alt="All Flavors" class="w-full h-full object-cover rounded-lg" onerror="this.src='https://placehold.co/100x100/111827/10b981?text=Packs';">
+                                </button>
+                                <!-- Thumbnail 2: Comparison Graphic -->
+                                <button onclick="changeProductImage(this.dataset.src, this)" 
+                                        data-src="images/clean-alternative-comparison.jpg"
+                                        class="w-full h-20 rounded-xl overflow-hidden border-2 border-transparent hover:border-brand-500/50 transition-all focus:outline-none bg-dark-800 p-1">
+                                    <img src="images/clean-alternative-comparison.jpg" alt="Comparison" class="w-full h-full object-cover rounded-lg" onerror="this.src='https://placehold.co/100x100/111827/10b981?text=Vs+Nicotine';">
+                                </button>
+                                <!-- Thumbnail 3: Mullein & Breathing -->
+                                <button onclick="changeProductImage(this.dataset.src, this)" 
+                                        data-src="images/mullein-herbal-breathing.jpg"
+                                        class="w-full h-20 rounded-xl overflow-hidden border-2 border-transparent hover:border-brand-500/50 transition-all focus:outline-none bg-dark-800 p-1">
+                                    <img src="images/mullein-herbal-breathing.jpg" alt="Mindful Breathing" class="w-full h-full object-cover rounded-lg" onerror="this.src='https://placehold.co/100x100/111827/10b981?text=Ingredients';">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <div class="flex justify-center items-center space-x-1 text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="text-slate-400 text-xs ml-2">(4.9/5 par +400 clients)</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white">Stylo Inhalateur d'Aromathérapie SEFUDUN</h3>
+                            <p class="text-xs text-slate-400 arabic-text">قلم استنشاق النباتات الطبيعية سيفودون - 600 استعمال</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Mindful Breathing & Herbal Ingredients Showcase -->
+    <section class="py-16 bg-dark-800/80 border-t border-dark-700/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <!-- Image Container -->
+                <div class="relative rounded-3xl overflow-hidden border border-emerald-500/30 glow-effect">
+                    <img src="images/mullein-herbal-breathing.jpg" 
+                         alt="SEFUDUN Mullein Aroma Diffuser - Mindful Moments" 
+                         class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x600/064e3b/10b981?text=Mindful+Herbal+Breathing';">
+                </div>
+
+                <!-- Descriptive Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold uppercase">
+                        <i class="fa-solid fa-wind"></i> Respiration Saine • تنفس نقي وصحي
+                    </div>
+
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Une inhalation douce et rafraîchissante pour vos pauses quotidiennes
+                    </h2>
+                    <h3 class="text-xl font-bold text-emerald-400 arabic-text">
+                        تجربة استنشاق طبيعية ومنعشة للحظات الهدوء
+                    </h3>
+
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Chaque bâtonnet diffuseur est élaboré à partir d'extraits naturels de plantes (Mullein, Thyme, Mint Oil, Marshmallow Root). Il offre jusqu'à <strong>600 utilisations</strong> d'une vapeur végétale apaisante sans fumée ni goudron.
+                    </p>
+
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                            <span><strong>Mullein & Thyme :</strong> Favorisent une sensation d'ouverture respiratoire et de bien-être.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                            <span><strong>Peppermint & Menthol :</strong> Coup de frais instantané pour revitaliser les sens.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                            <span><strong>Lavender & Melatonin :</strong> Formule dédiée à la détente du soir et au sommeil réparateur.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Quit Smoking & Healthy Alternative Comparison -->
+    <section class="py-16 bg-dark-900 border-t border-dark-700/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-400 text-xs font-bold uppercase tracking-wider border border-brand-500/30">
+                    <i class="fa-solid fa-shield-halved"></i> Alternative Saine • البديل الذكي والصحي
+                </div>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Vous cherchez à arrêter de fumer ?</h2>
+                <p class="text-emerald-400 font-bold text-lg arabic-text">هل تبحث عن بديل صحي يتخلص من النيكوتين؟</p>
+                <p class="text-slate-400 text-sm">Optez pour une alternative propre et intelligente sans dépendance chimique.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <!-- Comparison Features List -->
+                <div class="space-y-4">
+                    <div class="bg-dark-800 p-5 rounded-2xl border border-emerald-500/30 flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-lg">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-base">Zéro Nicotine • بدون نيكوتين</h4>
+                            <p class="text-xs text-slate-400">Gardez le geste et la fixation orale sans introduire de substances addictives dans votre corps.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-800 p-5 rounded-2xl border border-emerald-500/30 flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-lg">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-base">100% Ingrédients Végétaux</h4>
+                            <p class="text-xs text-slate-400">Aucun additif synthétique nocif ni substances chimiques agressives pour l'organisme.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-800 p-5 rounded-2xl border border-emerald-500/30 flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-lg">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-base">Expérience Aromathérapie Purifiante</h4>
+                            <p class="text-xs text-slate-400">Remplace les patchs ou médicaments par des rituels d'inhalation naturels aux bienfaits apaisants.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Infographic Banner -->
+                <div class="relative rounded-3xl overflow-hidden border border-dark-700 glow-effect">
+                    <img src="images/clean-alternative-comparison.jpg" 
+                         alt="Struggling to Quit Smoking - Choose a Cleaner Alternative" 
+                         class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x600/111827/10b981?text=Clean+Alternative+Vs+Nicotine';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits Grid -->
+    <section class="py-16 bg-dark-800/50 border-y border-dark-700/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Pourquoi Choisir Aroma Pen ?</h2>
+                <p class="text-emerald-400 font-semibold arabic-text">لماذا يفضل خبراؤنا استنشاق الزيوت الطبيعية؟</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Benefit 1 -->
+                <div class="bg-dark-800 p-6 rounded-2xl border border-dark-700/60 hover:border-brand-500/40 transition-all space-y-3">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 text-xl">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white">100% Extrait de Plantes</h3>
+                    <p class="text-xs text-emerald-400 arabic-text font-medium">مكونات طبيعية 100%</p>
+                    <p class="text-slate-400 text-xs sm:text-sm">Infusé aux huiles essentielles pures sans additifs nocifs ni produits chimiques.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-dark-800 p-6 rounded-2xl border border-dark-700/60 hover:border-brand-500/40 transition-all space-y-3">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 text-xl">
+                        <i class="fa-solid fa-ban-smoke"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white">Sans Nicotine ni Tabac</h3>
+                    <p class="text-xs text-emerald-400 arabic-text font-medium">خالي من النيكوتين والتبغ</p>
+                    <p class="text-slate-400 text-xs sm:text-sm">Une expérience pure qui aide à soulager la fixation orale et le geste quotidien.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-dark-800 p-6 rounded-2xl border border-dark-700/60 hover:border-brand-500/40 transition-all space-y-3">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 text-xl">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white">Effet Instantané</h3>
+                    <p class="text-xs text-emerald-400 arabic-text font-medium">تأثير سريع ومباشر</p>
+                    <p class="text-slate-400 text-xs sm:text-sm">Retrouvez votre concentration ou un état de calme profond en seulement 3 inspirations.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-dark-800 p-6 rounded-2xl border border-dark-700/60 hover:border-brand-500/40 transition-all space-y-3">
+                    <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 text-xl">
+                        <i class="fa-solid fa-pocket"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white">Format Pocket Discret</h3>
+                    <p class="text-xs text-emerald-400 arabic-text font-medium">حجم صغير وسهل الحمل</p>
+                    <p class="text-slate-400 text-xs sm:text-sm">Design élégant à emporter partout avec vous : au bureau, en voiture ou en voyage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Formulas / Variants Section -->
+    <section id="formulas" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Nos Formules Aromatiques</h2>
+                <p class="text-emerald-400 font-semibold arabic-text">اختر النكهة والتأثير المناسب لاحتياجك</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Formula 1 -->
+                <div class="bg-gradient-to-b from-dark-800 to-dark-900 p-6 rounded-3xl border border-purple-500/30 relative flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-full h-48 rounded-2xl overflow-hidden border border-purple-500/30">
+                            <img src="images/sefudun-flavors-all.jpg" alt="SEFUDUN Sleep Aroma Diffuser" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/3b0764/c084fc?text=Sleep+Lavender';">
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs font-semibold">Relaxation & Sommeil</span>
+                        <h3 class="text-xl font-bold text-white">Calm & Sleep</h3>
+                        <p class="text-xs text-purple-300 arabic-text">الاسترخاء وتحسين جودة النوم</p>
+                        <p class="text-slate-400 text-xs leading-relaxed">Formulé à base de <strong>Lavande, Melatonin & Camomille</strong>. Idéal pour apaiser l'esprit après une longue journée stressante.</p>
+                    </div>
+                    <div class="pt-6 border-t border-dark-700 mt-6 flex items-center justify-between text-xs text-slate-300">
+                        <span>Arome : Lavande & Camomille</span>
+                        <i class="fa-solid fa-moon text-purple-400 text-lg"></i>
+                    </div>
+                </div>
+
+                <!-- Formula 2 -->
+                <div class="bg-gradient-to-b from-dark-800 to-dark-900 p-6 rounded-3xl border border-brand-500/40 relative flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-full h-48 rounded-2xl overflow-hidden border border-emerald-500/30">
+                            <img src="images/mullein-herbal-breathing.jpg" alt="SEFUDUN Energy Aroma Diffuser" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/064e3b/34d399?text=Energy+Mint';">
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-brand-500/20 text-brand-300 rounded-full text-xs font-semibold">Énergie & Focus</span>
+                        <h3 class="text-xl font-bold text-white">Focus & Energy</h3>
+                        <p class="text-xs text-brand-300 arabic-text">التركيز والحيوية اليومية</p>
+                        <p class="text-slate-400 text-xs leading-relaxed">Enrichi en <strong>Menthe Poivrée, Caffeine & Vitamine B12</strong>. Fournit un coup de frais immédiat pour stimuler la clarté mentale.</p>
+                    </div>
+                    <div class="pt-6 border-t border-dark-700 mt-6 flex items-center justify-between text-xs text-slate-300">
+                        <span>Arome : Menthe Poivrée</span>
+                        <i class="fa-solid fa-bolt text-brand-400 text-lg"></i>
+                    </div>
+                </div>
+
+                <!-- Formula 3 -->
+                <div class="bg-gradient-to-b from-dark-800 to-dark-900 p-6 rounded-3xl border border-amber-500/30 relative flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-full h-48 rounded-2xl overflow-hidden border border-amber-500/30">
+                            <img src="images/sefudun-flavors-all.jpg" alt="SEFUDUN Maka & Mullein Aroma Diffuser" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/451a03/fbbf24?text=M Maka+Mullein';">
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs font-semibold">Bien-être & Respiration</span>
+                        <h3 class="text-xl font-bold text-white">Mullein & Maka</h3>
+                        <p class="text-xs text-amber-300 arabic-text">الانتعاش والتنفس النقّي</p>
+                        <p class="text-slate-400 text-xs leading-relaxed">Combinaison d'extrait de <strong>Mullein, Thyme & Racine de Maka</strong>. Favorise une sensation de fraîcheur respiratoire profonde.</p>
+                    </div>
+                    <div class="pt-6 border-t border-dark-700 mt-6 flex items-center justify-between text-xs text-slate-300">
+                        <span>Arome : Herbes Sauvages</span>
+                        <i class="fa-solid fa-wind text-amber-400 text-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Native Direct Order Form (Cash-On-Delivery) -->
+    <section id="order-form" class="py-16 bg-dark-800/40 border-t border-dark-700/50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-10 space-y-2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider border border-emerald-500/30">
+                    <i class="fa-solid fa-truck-fast"></i> Paiement à la livraison • الدفع عند الاستلام
+                </div>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Passez Votre Commande</h2>
+                <p class="text-slate-400 text-sm sm:text-base arabic-text">قم بتعبئة المعطيات لتأكيد طلبك وتوصيله حتى باب المنزل</p>
+            </div>
+
+            <div class="bg-gradient-to-b from-dark-800 to-dark-900 p-6 sm:p-10 rounded-3xl border border-dark-700 shadow-2xl relative">
+                <form id="cod-form" onsubmit="handleOrderSubmit(event)" class="space-y-6">
+
+                    <!-- Step 1: Pack Selection -->
+                    <div class="space-y-3">
+                        <label class="block text-sm font-bold text-slate-200">
+                            1. Choisissez votre Pack / اختر الباقة :
+                        </label>
+                        <div class="grid sm:grid-cols-3 gap-4">
+                            <!-- Pack 1 -->
+                            <label class="relative flex flex-col p-4 bg-dark-800 border-2 border-dark-700 rounded-2xl cursor-pointer hover:border-emerald-500/50 transition-all pack-option">
+                                <input type="radio" name="pack" value="1 Unité (35 TND)" data-price="35" class="sr-only" onchange="updateTotal(35)" checked>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-slate-400">DÉCOUVERTE</span>
+                                    <span class="w-4 h-4 rounded-full border-2 border-slate-500 flex items-center justify-center radio-circle">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-500 hidden inner-dot"></span>
+                                    </span>
+                                </div>
+                                <div class="text-lg font-bold text-white mt-2">1 Unité</div>
+                                <div class="text-sm text-emerald-400 font-extrabold">35 TND</div>
+                                <span class="text-[10px] text-slate-400 mt-1">Frais de livraison applicables</span>
+                            </label>
+
+                            <!-- Pack 2 (Recommended) -->
+                            <label class="relative flex flex-col p-4 bg-dark-800 border-2 border-emerald-500 rounded-2xl cursor-pointer transition-all pack-option shadow-lg shadow-emerald-500/10">
+                                <span class="absolute -top-2.5 right-3 bg-emerald-500 text-dark-900 text-[10px] font-black px-2 py-0.5 rounded-full uppercase">Meilleur Choix</span>
+                                <input type="radio" name="pack" value="Pack Duo 2 Unités (59 TND)" data-price="59" class="sr-only" onchange="updateTotal(59)">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-emerald-400">PACK DUO</span>
+                                    <span class="w-4 h-4 rounded-full border-2 border-emerald-500 flex items-center justify-center radio-circle">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-500 inner-dot"></span>
+                                    </span>
+                                </div>
+                                <div class="text-lg font-bold text-white mt-2">2 Unités</div>
+                                <div class="text-sm text-emerald-400 font-extrabold">59 TND <span class="text-[10px] text-slate-400 line-through">70 TND</span></div>
+                                <span class="text-[10px] text-emerald-300 font-semibold mt-1">Livraison GRATUITE</span>
+                            </label>
+
+                            <!-- Pack 3 -->
+                            <label class="relative flex flex-col p-4 bg-dark-800 border-2 border-dark-700 rounded-2xl cursor-pointer hover:border-emerald-500/50 transition-all pack-option">
+                                <input type="radio" name="pack" value="Pack Trio 3 Unités (79 TND)" data-price="79" class="sr-only" onchange="updateTotal(79)">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-purple-400">PACK TRIO</span>
+                                    <span class="w-4 h-4 rounded-full border-2 border-slate-500 flex items-center justify-center radio-circle">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-500 hidden inner-dot"></span>
+                                    </span>
+                                </div>
+                                <div class="text-lg font-bold text-white mt-2">3 Unités</div>
+                                <div class="text-sm text-emerald-400 font-extrabold">79 TND</div>
+                                <span class="text-[10px] text-emerald-300 font-semibold mt-1">Livraison GRATUITE</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Scent/Formula Preference -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-200">
+                            2. Préférence de parfum / اختيار النكهة المفضلة :
+                        </label>
+                        <select id="scent-choice" class="w-full bg-dark-800 border border-dark-700 text-slate-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500 transition-all">
+                            <option value="Pack Varié (Recommandé)">Pack Varié / تشكيلة متنوعة (Recommandé)</option>
+                            <option value="Focus & Energy (Menthe)">Focus & Energy (Menthe / نعناع)</option>
+                            <option value="Calm & Sleep (Lavande)">Calm & Sleep (Lavande / لافندر)</option>
+                            <option value="Natural Balance (Herbes)">Natural Balance (Herbes / أعشاب)</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 3: Shipping Details -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="space-y-1">
+                            <label class="block text-xs font-bold text-slate-300">Nom & Prénom / الاسم واللقب *</label>
+                            <input type="text" id="customer-name" required placeholder="Ex: Mohamed Ben Ali" 
+                                   class="w-full bg-dark-800 border border-dark-700 text-slate-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500 transition-all">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="block text-xs font-bold text-slate-300">Numéro Téléphone / رقم الهاتف *</label>
+                            <input type="tel" id="customer-phone" required pattern="[0-9]{8,12}" placeholder="Ex: 216 12 345 678" 
+                                   class="w-full bg-dark-800 border border-dark-700 text-slate-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500 transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-3 gap-4">
+                        <div class="sm:col-span-2 space-y-1">
+                            <label class="block text-xs font-bold text-slate-300">Adresse Complète / العنوان الكامل *</label>
+                            <input type="text" id="customer-address" required placeholder="Ex: Cité Ennasr 2, Rue 14 Janvier, Appt 4" 
+                                   class="w-full bg-dark-800 border border-dark-700 text-slate-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500 transition-all">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="block text-xs font-bold text-slate-300">Gouvernorat / الولاية *</label>
+                            <select id="customer-city" required class="w-full bg-dark-800 border border-dark-700 text-slate-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500 transition-all">
+                                <option value="">Sélectionner votre gouvernorat...</option>
+                                <option value="Ariana">Ariana / أريانة</option>
+                                <option value="Béja">Béja / باجة</option>
+                                <option value="Ben Arous">Ben Arous / بن عروس</option>
+                                <option value="Bizerte">Bizerte / بنزرت</option>
+                                <option value="Gabès">Gabès / قابس</option>
+                                <option value="Gafsa">Gafsa / قفصة</option>
+                                <option value="Jendouba">Jendouba / جندوبة</option>
+                                <option value="Kairouan">Kairouan / القيروان</option>
+                                <option value="Kasserine">Kasserine / القصرين</option>
+                                <option value="Kébili">Kébili / قبلي</option>
+                                <option value="Le Kef">Le Kef / الكاف</option>
+                                <option value="Mahdia">Mahdia / المهدية</option>
+                                <option value="Manouba">Manouba / منوبة</option>
+                                <option value="Médenine">Médenine / مدنين</option>
+                                <option value="Monastir">Monastir / المنستير</option>
+                                <option value="Nabeul">Nabeul / نابل</option>
+                                <option value="Sfax">Sfax / صفاقس</option>
+                                <option value="Sidi Bouzid">Sidi Bouzid / سيدي بوزيد</option>
+                                <option value="Siliana">Siliana / سليانة</option>
+                                <option value="Sousse">Sousse / سوسة</option>
+                                <option value="Tataouine">Tataouine / تطاوين</option>
+                                <option value="Tozeur">Tozeur / توزر</option>
+                                <option value="Tunis">Tunis / تونس</option>
+                                <option value="Zaghouan">Zaghouan / زغوان</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Summary & Submit -->
+                    <div class="pt-4 border-t border-dark-700 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Montant Total à payer à la livraison :</span>
+                            <span id="final-price" class="text-3xl font-extrabold text-emerald-400">59 TND</span>
+                        </div>
+                        <button type="submit" 
+                                class="w-full sm:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-base rounded-2xl transition-all shadow-xl shadow-emerald-500/25 flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Confirmer la commande (COD)</span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Confirmation Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-dark-900/90 backdrop-blur-md hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-dark-800 border border-emerald-500/40 p-8 rounded-3xl max-w-md w-full text-center space-y-6 shadow-2xl relative">
+            <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-3xl mx-auto">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div class="space-y-2">
+                <h3 class="text-2xl font-bold text-white">Commande Enregistrée !</h3>
+                <p class="text-sm text-emerald-400 arabic-text font-bold">تم تسجيل طلبك بنجاح</p>
+                <p class="text-xs text-slate-300">Notre équipe vous contactera sous peu pour confirmer l'expédition à votre adresse.</p>
+            </div>
+
+            <div id="modal-summary" class="bg-dark-900/80 p-4 rounded-xl text-left text-xs text-slate-300 space-y-1 border border-dark-700">
+                <!-- Filled dynamically -->
+            </div>
+
+            <div class="space-y-2">
+                <a id="modal-whatsapp-link" href="#" target="_blank" class="w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl text-sm flex items-center justify-center space-x-2 transition-all">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Envoyer la confirmation via WhatsApp</span>
+                </a>
+                <button onclick="closeModal()" class="w-full py-2.5 bg-dark-700 hover:bg-dark-600 text-slate-300 font-semibold rounded-xl text-xs">
+                    Fermer
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <section class="py-16">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="text-center mb-12 space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Foire Aux Questions (FAQ)</h2>
+                <p class="text-emerald-400 font-semibold arabic-text">أسئلة شائعة</p>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-dark-800 p-5 rounded-2xl border border-dark-700 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-white text-sm sm:text-base">
+                        <span>Est-ce que le produit contient de la nicotine ?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-brand-500"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-dark-700/50 pt-3">
+                        Non, 100% sans nicotine, sans tabac et sans composants toxiques. C’est un bâtonnet d’aromathérapie pure aux huiles essentielles.
+                    </p>
+                </details>
+
+                <details class="group bg-dark-800 p-5 rounded-2xl border border-dark-700 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-white text-sm sm:text-base">
+                        <span>Combien d'inhalations contient un bâtonnet ?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-brand-500"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-dark-700/50 pt-3">
+                        Chaque stylo offre environ 300 à 400 inhalations aromatiques selon la fréquence d’utilisation.
+                    </p>
+                </details>
+
+                <details class="group bg-dark-800 p-5 rounded-2xl border border-dark-700 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-white text-sm sm:text-base">
+                        <span>Comment se déroule la livraison en Tunisie ?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-brand-500"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-dark-700/50 pt-3">
+                        La livraison est effectuée sous 24h à 48h partout en Tunisie. Vous payez en espèces directement au livreur lors de la réception de votre colis.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-dark-900 border-t border-dark-700/50 text-center text-xs text-slate-500 space-y-2">
+        <p>© 2026 AROMA PEN. Tous droits réservés.</p>
+        <p class="arabic-text text-slate-600">منتج عطري طبيعي غير مخصص للاستعمال الطبي العلاجي</p>
+    </footer>
+
+    <!-- Interactive Scripting -->
+    <script>
+        function changeProductImage(src, btn) {
+            document.getElementById('main-product-img').src = src;
+            const buttons = btn.parentElement.children;
+            for (let b of buttons) {
+                b.classList.remove('border-brand-500');
+                b.classList.add('border-transparent');
+            }
+            btn.classList.remove('border-transparent');
+            btn.classList.add('border-brand-500');
+        }
+
+        function updateTotal(price) {
+            document.getElementById('final-price').innerText = price + " TND";
+            // Highlight selected pack radio card visually
+            const packs = document.querySelectorAll('.pack-option');
+            packs.forEach(p => {
+                const radio = p.querySelector('input[type="radio"]');
+                const dot = p.querySelector('.inner-dot');
+                const circle = p.querySelector('.radio-circle');
+                if (radio.checked) {
+                    p.classList.add('border-emerald-500');
+                    p.classList.remove('border-dark-700');
+                    if (dot) dot.classList.remove('hidden');
+                    if (circle) circle.classList.add('border-emerald-500');
+                } else {
+                    p.classList.remove('border-emerald-500');
+                    p.classList.add('border-dark-700');
+                    if (dot) dot.classList.add('hidden');
+                    if (circle) circle.classList.remove('border-emerald-500');
+                }
+            });
+        }
+
+        function handleOrderSubmit(e) {
+            e.preventDefault();
+            const pack = document.querySelector('input[name="pack"]:checked').value;
+            const scent = document.getElementById('scent-choice').value;
+            const name = document.getElementById('customer-name').value;
+            const phone = document.getElementById('customer-phone').value;
+            const address = document.getElementById('customer-address').value;
+            const city = document.getElementById('customer-city').value;
+            const price = document.getElementById('final-price').innerText;
+
+            const summaryHtml = `
+                <p><strong>Client:</strong> ${name}</p>
+                <p><strong>Téléphone:</strong> ${phone}</p>
+                <p><strong>Adresse:</strong> ${address}, ${city}</p>
+                <p><strong>Commande:</strong> ${pack} (${scent})</p>
+                <p><strong>Total (COD):</strong> <span class="text-emerald-400 font-bold">${price}</span></p>
+            `;
+            document.getElementById('modal-summary').innerHTML = summaryHtml;
+
+            // Prepare WhatsApp link backup
+            const waMsg = encodeURIComponent(`Bonjour, je confirme ma commande:\n- Nom: ${name}\n- Tél: ${phone}\n- Adresse: ${address}, ${city}\n- Offre: ${pack}\n- Parfum: ${scent}\n- Total COD: ${price}`);
+            document.getElementById('modal-whatsapp-link').href = `https://wa.me/216XXXXXXXX?text=${waMsg}`;
+
+            document.getElementById('success-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+            document.getElementById('cod-form').reset();
+            updateTotal(59);
+        }
+    </script>
+</body>
+</html>
